@@ -1,9 +1,10 @@
 /* Variable declarations */
 :root {
   --primary-color: #f84646;
+  --primary-color-hover: #e30505;
   --secondary-color: #000000;
   --secondary-light-color: #ffffff;
   --main-text-color: #808080;
   --footer-bg: #f8464a;
-  --primary-color-hover: #e30505;
+  --footer-text-disable: #e6e6e6;
 }
