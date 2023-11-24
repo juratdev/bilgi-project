@@ -1,3 +1,9 @@
+/* google fonts link  */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+/* css reset  */
+
 *,
 *::before,
 *::after {
@@ -15,7 +21,7 @@ svg {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 ul,
@@ -36,4 +42,20 @@ a {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-light-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: var(--primary-color-hover);
 }

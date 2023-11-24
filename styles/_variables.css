@@ -1,0 +1,9 @@
+/* Variable declarations */
+:root {
+  --primary-color: #f84646;
+  --secondary-color: #000000;
+  --secondary-light-color: #ffffff;
+  --main-text-color: #808080;
+  --footer-bg: #f8464a;
+  --primary-color-hover: #e30505;
+}

@@ -1,0 +1,263 @@
+.header {
+  aspect-ratio: 1440/682;
+  /* height: 100vh; */
+  background-image: url("../images/header/bg-hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 60px;
+  padding-top: 35px;
+}
+
+.header-navbar__menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header-navbar__menu li > a {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: color 0.4s ease;
+}
+.header-navbar__menu li > a:hover {
+  color: var(--primary-color);
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--secondary-color);
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.header-title {
+  max-width: 665px;
+  margin-top: 100px;
+}
+
+.header-title > h1 {
+  color: var(--secondary-color);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 82px;
+}
+
+.header-title > p {
+  max-width: 650px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  margin: 20px 0 50px;
+}
+
+.header-title form {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+.header-title input {
+  width: 100%;
+  padding: 16px 0 16px 32px;
+  border-radius: 8px;
+  background-color: var(--secondary-light-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+}
+
+.header-title input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header-title button {
+  position: absolute;
+  padding: 12px 35px;
+  right: 5px;
+  top: 10%;
+  height: 80%;
+  border-radius: 8px;
+}
+
+/* Media */
+
+@media only screen and (max-width: 1350px) {
+  .header-title {
+    padding-bottom: 125px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 950px;
+  }
+  .header-navbar {
+    gap: 50px;
+  }
+
+  .header-navbar__menu {
+    gap: 20px;
+  }
+  .header-title {
+    padding-bottom: 125px;
+  }
+  .header-title > h1 {
+    max-width: 650px;
+    font-size: 56px;
+    line-height: 73.5px;
+  }
+  .header-title > p {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .header-navbar {
+    gap: 40px;
+  }
+
+  .header-navbar__menu {
+    gap: 18px;
+  }
+  .header-title {
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
+  .header-title > h1 {
+    max-width: 550px;
+    font-size: 46px;
+    line-height: 55px;
+  }
+  .header-title > p {
+    max-width: 470px;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0;
+  }
+  .header-title form {
+    width: 420px;
+  }
+  .header-title input {
+    padding: 12px 0 12px 25px;
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .hamburger {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .header {
+    background-position: center top;
+  }
+  .header-navbar__menu {
+    display: none;
+  }
+  .header-navbar {
+    justify-content: space-between;
+  }
+  .header-title {
+    margin-top: 60px;
+    padding-bottom: 80px;
+  }
+  .header-title > h1 {
+    max-width: 500px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .header-title > p {
+    max-width: 470px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .header-title form {
+    width: 370px;
+  }
+  .header-title input {
+    padding: 12px 0 12px 25px;
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-title form {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .header-title form {
+    margin: 0 auto;
+    width: 350px;
+  }
+  .header-title input {
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    line-height: 34px;
+  }
+  .header-title button {
+    padding: 10px 30px;
+    right: 5px;
+    top: 10%;
+    height: 80%;
+    border-radius: 8px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .header-title input {
+    font-size: 12px;
+  }
+  .header-title button {
+    padding: 8px 15px;
+  }
+}
