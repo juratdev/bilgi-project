@@ -52,7 +52,7 @@
   height: 5px;
   background-color: var(--secondary-color);
   margin: 6px 0px;
-  transition: 0.4s;
+  transition: all 0.4s ease;
 }
 
 .header-title {
@@ -93,6 +93,14 @@
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0.2px;
+  border: 1px solid transparent;
+}
+
+.header-title input:focus {
+  border: 1px solid #f8464678;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(248, 70, 70, 0.09);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(248, 70, 70, 0.09);
+  box-shadow: 0px 5px 10px 2px rgba(248, 70, 70, 0.09);
 }
 
 .header-title input::placeholder {
@@ -108,7 +116,7 @@
   border-radius: 8px;
 }
 
-/* Media */
+/* Media Queries */
 
 @media only screen and (max-width: 1350px) {
   .header-title {
@@ -127,10 +135,6 @@
 
   .header-navbar__menu {
     gap: 20px;
-  }
-
-  .header-title {
-    padding-bottom: 125px;
   }
 
   .header-title > h1 {
@@ -239,12 +243,6 @@
   .header-title form {
     width: 370px;
   }
-
-  .header-title input {
-    padding: 12px 0 12px 25px;
-    font-size: 16px;
-    line-height: 34px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -285,19 +283,16 @@
 
   .header-title button {
     padding: 10px 30px;
-    right: 5px;
-    top: 10%;
-    height: 80%;
-    border-radius: 8px;
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 350px) {
   .header-title input {
     font-size: 12px;
   }
 
   .header-title button {
     padding: 8px 15px;
+    font-size: 12px;
   }
 }

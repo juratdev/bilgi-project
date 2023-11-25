@@ -22,6 +22,7 @@ svg {
 
 body {
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 ul,
@@ -53,6 +54,7 @@ a {
   line-height: 20px;
   border-radius: 5px;
   border: none;
+  outline: none;
   cursor: pointer;
   transition: all 0.4s ease;
 }

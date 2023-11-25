@@ -5,7 +5,7 @@
   font-family: "Inter", sans-serif;
 }
 
-.footer-menu {
+.header-nav .footer-menu {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 100px;
@@ -71,12 +71,13 @@
   transform: scale(1.1);
 }
 
-/* Media */
+/* Media Queries */
 
 @media only screen and (max-width: 1090px) {
   /* .footer-menu__title:last-child {
     margin-top: 50px;
   } */
+
   .footer-menu {
     gap: 60px;
   }
@@ -99,10 +100,17 @@
 }
 
 @media only screen and (max-width: 580px) {
+  .footer {
+    padding-bottom: 45px;
+  }
   .footer-menu {
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 49px;
+  }
+
+  .footer-menu__title {
+    gap: 20px;
   }
 
   .footer-bottom {
@@ -110,7 +118,7 @@
   }
 
   .footer-bottom__social {
-    margin-top: -20px;
+    margin-top: -10px;
     margin-bottom: 60px;
   }
 }
