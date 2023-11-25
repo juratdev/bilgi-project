@@ -1,0 +1,113 @@
+.quality {
+    padding: 120px 0 140px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.title p {
+    width: 960px;
+    font-size: 24px;
+    line-height: 39.5px;
+    letter-spacing: 0.2px;
+    margin-bottom: 90px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 116px;
+    row-gap: 90px;
+}
+
+.cards div {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cards p {
+    width: 270px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 1280px) {
+    .quality {
+        padding-right: 82px;
+        padding-left: 82px;
+    }
+
+    .title p {
+        width: auto;
+    }
+
+    .cards {
+        column-gap: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .title p {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quality {
+        padding-top: 48px;
+        padding-bottom: 64px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .title p {
+        font-size: 18px;
+        line-height: 26.5px;
+        letter-spacing: 0.2px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .title p {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        margin-bottom: 72px;
+    }
+}

@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.test-section {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 160px 121px;
+}
+
+.top-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-side div:nth-child(1) {
+  padding-right: 175px;
+}
+
+.top-side div h1 {
+  color: #2E2E2E;
+  font-size: 64px;
+  line-height: 76px;
+}
+
+.top-side div p {
+  color: #808080;
+  font-size: 16px;
+  line-height: 32px;
+  width: 470px;
+  margin-top: 40px;
+}
+
+
+.btn-test{
+  max-width: 160px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.top-side img {
+  max-width: 504px;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+.bottom-side {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.bottom-side div:nth-child(1) {
+  padding-right: 140px;
+}
+
+.bottom-side div h1 {
+  color: #2E2E2E;
+  font-size: 64px;
+  line-height: 76px;
+}
+
+.bottom-side div p {
+  color: #808080;
+  font-size: 16px;
+  line-height: 32px;
+  width: 450px;
+  margin-top: 40px;
+}
+.bottom-side__title{
+  margin-left: 30px;
+ 
+}
+
+
+
+
+.bottom-side img {
+  border-radius: 8px;
+
+}
+
+@media (max-width: 1280px) {
+  .test-section {
+      padding: 160px 60px;
+  }
+
+  .top-side div:nth-child(1) {
+      padding-right: 30px;
+  }
+
+  .bottom-side div:nth-child(1) {
+      padding-right: 56px;
+  }
+
+  .top-side img {
+      max-width: 424px;
+      height: auto;
+      border-radius: 8px;
+
+  }
+
+  .top-side div h1 {
+      font-size: 58px;
+      line-height: 59.5px;
+  }
+
+  .top-side div p {
+      font-size: 14px;
+      line-height: 28.5px;
+  }
+
+  .bottom-side img {
+      max-width: 424px;
+      height: auto;
+      border-radius: 8px;
+
+  }
+
+  .bottom-side div h1 {
+      font-size: 58px;
+      line-height: 59.5px;
+  }
+
+  .bottom-side div p {
+      font-size: 14px;
+      line-height: 28.5px;
+  }
+  .bottom-side div h1{
+    font-size: 54px;
+  }
+
+}
+@media (max-width: 1024px){
+  .top-side{
+   margin: auto;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+  .bottom-side div h1{
+    font-size: 58px;
+  }
+  .top-side img{
+    margin-top: 50px;
+  }
+  .top-side div:nth-child(1){
+    padding: 0px;
+  }
+  .bottom-side{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-side img{
+    margin-top: 40px;
+  }
+  .bottom-side div:nth-child(1){
+    padding: 0px;
+  }
+  .bottom-side{
+    justify-content: center;
+  }
+}
+@media (max-width: 1010px){
+  .bottom-side__title{
+  margin: 0px;
+  }
+}
+@media (max-width: 768px) {
+
+  .test-section {
+      padding: 30px 20px 70px 20px;
+  }
+ 
+
+
+  .top-side {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 30px;
+  }
+
+
+  .bottom-side {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+  }
+
+  .top-side div:nth-child(1) {
+      padding: 20px 40px;
+
+  }
+
+  .bottom-side div:nth-child(1) {
+      padding-right: 0px;
+  }
+
+  .top-side div h1 {
+      font-size: 36px;
+      line-height: 41.5px;
+  }
+
+  .top-side div p {
+      width: auto;
+      font-size: 14px;
+      line-height: 28.5px;
+  }
+
+  .bottom-side div h1 {
+      font-size: 36px;
+      line-height: 41.5px;
+  }
+
+  .bottom-side div p {
+      width: auto;
+      font-size: 14px;
+      line-height: 28.5px;
+  }
+
+  .top-side img {
+      max-width: 335px;
+
+  }
+
+  .bottom-side img {
+      max-width: 335px;
+
+  }
+
+  .top-side div button {
+      margin-top: 30px;
+      width: 100%;
+  }
+  .bottom-side img{
+    margin-top: 0px;
+  }
+  .bottom-side div p{
+    padding: 10px 40px;
+  }
+  .bottom-side div h1{
+    margin-top: 20px;
+  }
+
+  .bottom-side div button {
+      margin-top: 40px;
+      width: 100%;
+  }
+
+  .bottom-side {
+      margin-top: 40px;
+  }
+  .bottom-size__title{
+    margin-left: 0px;
+   }
+}
+@media (max-width: 465px){
+  .bottom-siz__title{
+   margin-left: 0px;
+  }
+}
