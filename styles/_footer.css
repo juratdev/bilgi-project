@@ -5,7 +5,7 @@
   font-family: "Inter", sans-serif;
 }
 
-.header-nav .footer-menu {
+.footer-menu {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 100px;
