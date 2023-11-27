@@ -94,6 +94,7 @@
   line-height: 36px;
   letter-spacing: 0.2px;
   border: 1px solid transparent;
+  transition: all 0.4s ease;
 }
 
 .header-title input:focus {
